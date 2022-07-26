@@ -1,58 +1,37 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-
-<div class="container-fluid overflow-hidden" id="main">
-
-    <div class="d-flex justify-content-center py-5">
-        <h1 class="display">CONTACT</h1>       
+    <div class="form">
+        
+        <form action="" onsubmit=" return sender()">
+            <h2>CONTACT</h2>
+            <h3>R&M</h3>
+            <input type="text" name="name" id="name" placeholder="YOUR NAME" required>
+            <input type="email" name="email" id="email" placeholder="YOUR EMAIL" required>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="ENTER MESSAGE" required></textarea>
+           
+            <button type="submit" value="Send" id="btn">SEND <i class="fa fa-telegram" style="font-size: 18px;"></i></button>
+        </form>
     </div>
-    <div class="d-flex justify-content-center ">
-        <h4>R&M</h4>
-    </div>
 
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6" id="fst">
-                <form action="/action_page.php">
-                    <div class="form-group">
-                      
-                      <input type="text" class="form-control bg-dark text-light btn-outline-secondary" id="uname" placeholder="NAME" name="uname">
-                      
-                    </div>
-                    <div class="form-group">                      
-                      <input type="password" class="form-control bg-dark text-light btn-outline-secondary" id="email" placeholder="EMAIL" name="email">                      
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control bg-dark text-light btn-outline-secondary" rows="5" id="comment" name="text">SEND ME A MESSAGE !</textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary bg-dark text-light btn-outline-secondary">Submit  <i class="fa-brands fa-telegram"></i></button>
-                  </form>
-            </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6" id="sec">                
+
+
+
+    
+ <!--<div class="col-lg-6 col-md-6 col-sm-6" id="sec">                
                 <div class="d-flex flex-row ">
                     <div class="p-1 "> <i class="fa-solid fa-location-pin"></i> Yerevan, Armenia</div> 
                   </div>
@@ -69,18 +48,33 @@
                     <div class="px-3 py-3"><a href="https://twitter.com/Ruslan4iiig" class="text-white"><i class="fa-brands fa-twitter-square"></i></a></div>
                 </div>
 
-            </div>
+            </div> 
         </div>
 
-
-
-    
-
+</div>  -->
 
 
 
-</div> 
 
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="sender.js"></script>
+
+
+
+
+</body>
+</html>
 
 <script src="script.js"></script>  
 </body>
