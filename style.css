@@ -61,7 +61,7 @@ h1,h2,h3{
    border: none;
    background: transparent;
    color: skyblue;
-   padding: 10px;
+   padding: 7px;
    border-radius: 5px;
    border: 2px solid skyblue;
    -webkit-transition: 600ms;
@@ -85,8 +85,9 @@ h1,h2,h3{
    gap:5px;
    grid-template-columns: auto auto;
    background-color: none;
-   padding: 25px;
+   padding: 10px;
    width: 100%;
+   justify-content: space-evenly;
   
 }
 
@@ -94,7 +95,7 @@ h1,h2,h3{
 .grid > div {
    background-color: none;
    text-align: center;
-   padding: 20px 0;
+   padding: 0px;
    font-size: 24px;
    color: skyblue;
    
