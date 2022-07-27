@@ -10,19 +10,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </script>
+    <script>
+        var onloadCallback = function(){
+            grecaptcha.render('.form', {
+                'sitekey':'6LeJpSQhAAAAAM1oZw4_Wx7WMWbNVNuE803Yfwqt',
+                'secretkey':'6LeJpSQhAAAAAPW5IgINeOR9eMA19ZrxYFx1VBVC'
+            })
+        }    
+        
+        var recaptcha_callback = function(){
+            var registerBtn = document.getElementById("btn");
+
+            registerBtn.removeAttribute('disabled');
+
+            registerBtn.style.cursor = "pointer";
+        }
+    </script>
+
 </head>
 <body>
 
     <div class="form">
         
-        <form action="" onsubmit=" return sender()">
+        <form action="?" onsubmit=" return sender()">
             <h2>CONTACT</h2>
             <h3>R&M</h3>
             <input type="text" name="name" id="name" placeholder="YOUR NAME" required>
             <input type="email" name="email" id="email" placeholder="YOUR EMAIL" required>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="ENTER MESSAGE" required></textarea>
-           
-            <button type="submit" value="Send" id="btn">SEND <i class="fa fa-telegram" style="font-size: 18px;"></i></button>
+            <div class="g-recaptcha" data-sitekey="6LeJpSQhAAAAAM1oZw4_Wx7WMWbNVNuE803Yfwqt" data-callback="recaptcha_callback"></div>
+              <br/>
+
+            <button type="submit" value="Send" id="btn" disabled>SEND <i class="fa fa-telegram" style="font-size: 18px;"></i></button>
         </form>
     </div>
 
@@ -54,28 +77,10 @@
 </div>  -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <link rel="stylesheet" href="style.css">
-    <script src="sender.js"></script>
-
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script>
 
 
 
 </body>
 </html>
 
-<script src="script.js"></script>  
-</body>
-</html>

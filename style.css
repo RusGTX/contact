@@ -65,10 +65,11 @@ h1,h2,h3{
    -webkit-transition: 600ms;
    transition: 600ms;
    font-family: 'Raleway', sans-serif;
+   cursor:not-allowed;
  }
  
  .form form #btn:hover {
-   cursor: pointer;
+   cursor: not-allowed;
    -webkit-box-shadow: inset 0 0 10px skyblue,
   0 0 10px skyblue;
            box-shadow: inset 0 0 10px skyblue,
