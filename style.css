@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@300&display=swap');
 
-
+* {
+   box-sizing: border-box;
+ }
 body{
    background: linear-gradient(70deg, #243331, #28223b);
    font-family: 'Raleway', sans-serif;
@@ -14,7 +16,7 @@ h1,h2,h3{
    left: 0;
    height: 100%;
    width: 100%;
-   background: linear-gradient(70deg, #243331, #28223b);
+   background: linear-gradient(70deg, #243331, #28223b);   
  }
  
  .form form {
@@ -59,37 +61,44 @@ h1,h2,h3{
    border: none;
    background: transparent;
    color: skyblue;
-   padding: 5px;
+   padding: 10px;
    border-radius: 5px;
    border: 2px solid skyblue;
    -webkit-transition: 600ms;
    transition: 600ms;
    font-family: 'Raleway', sans-serif;
-   cursor:not-allowed;
+   cursor: not-allowed;
  }
  
- .form form #btn:hover {
-   cursor: not-allowed;
+ .form form #btn:hover {   
    -webkit-box-shadow: inset 0 0 10px skyblue,
   0 0 10px skyblue;
            box-shadow: inset 0 0 10px skyblue,
   0 0 10px skyblue;
  }
 
+ 
 
 
+.grid{
+   display: grid;
+   gap:5px;
+   grid-template-columns: auto auto;
+   background-color: none;
+   padding: 25px;
+   width: 100%;
+  
+}
 
 
-
-
-
-
-
-
-
-
-
-
+.grid > div {
+   background-color: none;
+   text-align: center;
+   padding: 20px 0;
+   font-size: 24px;
+   color: skyblue;
+   
+ }
 
 
 
